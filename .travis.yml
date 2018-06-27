@@ -4,7 +4,7 @@ node_js:
 beforescript:
 - npm install -g gulp
 - npm install
-script: gulp package-app
+script: travis_wait gulp package-app
 deploy:
   provider: heroku
   app: greg1wdrom
