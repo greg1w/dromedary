@@ -1,10 +1,12 @@
 language: node_js
 node_js:
-  - "7.2"
+- '7.2'
 beforescript:
-  - npm install -g gulp
-  - npm install
+- npm install -g gulp
+- npm install
 script: gulp package-app
 deploy:
   provider: heroku
   app: greg1wdrom
+  api_key:
+    secure: QvmgWUq1pmSyySp3uV7ISsvK142o2fR+Yoh98iNOtF/YlWo1Eg2383Ip/wRiu6ILMNO4hVSC843r/beAFx1AaWBE2rSEyTl+YxLg3wcb0/NHkcO4WH++ol0iwYkQQLgIyEcVtf1IG589WSFK5T4iBEH+i7GYcoKDMt8G6964Z8xISOy9tA6ILgfpDPrgVV++9fgappTa0Yp82jmkW3t0vua2eTawAtkvbNJWnU1apgfA6vJDhjRxdVQIKKc+1gJ21sWHpRE3hb3oNg+Z0Z88BjBsMXBCKMywM7fXjYInyqcO7mM6BBq5l03CD/OsFVok3cYiCdhesGU+O4eoxAnzMXRHykwA7O+uQ18JQ55pwJBwF6haV07S9Meem7kF+vBGCaCWCL5BvXjC9u447HpURsTlSiAZdu8T2AIbqKDKDClmoImA8v32YLVJ9mQieFmvPxvjV5xZRsLSSX+aO+K3aLWf6r3K2K6BCOItOy78zC5/noAq9bkv47AL6oaRNjTH4raE6ICE7QFlxO7kP1FTQmbziz867txwoMn4FQXsPejALz4EHPR6N+uYj/mFJXsQICk0FdfY3aO+kRegfm/84+b/MsPBDFPoy/MfrU4oQoT2I2OQOcpA1nQ4RrIcVOLBaL8HqLDRlxuZWLoI/vQb5oOPwXPlTWFy5c7LU16DmK4=
